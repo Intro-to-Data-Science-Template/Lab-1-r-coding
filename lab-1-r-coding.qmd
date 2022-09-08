@@ -7,40 +7,72 @@ editor: source
 
 ## Introduction
 
-This lab will provide an opportunity to practice fundamental R coding skills with real-world data. We will be looking at data from the United Nations [World Population Prospects 2022](https://population.un.org/wpp/)[^1], which for 27 years has been providing population estimates for countries around the world. This year their estimates span 237 countries, with historical data from 1950-2022, and projections out to 2100. 
+This lab will provide an opportunity to practice fundamental R coding skills with real-world data. We will be looking at data from the United Nations (UN) [World Population Prospects 2022](https://population.un.org/wpp/)[^1], which for 27 years has been providing population estimates for countries around the world. This year their estimates span 237 countries, with historical data from 1950-2022, and projections out to 2100. 
 
 [^1]: United Nations, Department of Economic and Social Affairs, Population Division (2022). World Population Prospects 2022, Online Edition. 
 
 This lab marks your first step into understanding the world through your own data analyses. The first step is often the hardest. But by the end of this lab you will already have more data skills than the vast majority of the population. With this, take your first step towards understanding, and through understanding towards change.
 
-## Understanding the Data
+## Understanding the Data Source
 
 Before we start to work with the data, we need to understand it. What do all of the **variables** (columns) mean? Let's start by looking at the data itself. In this project **repo (repository/folder)**, navigate to the "data" folder, and open the file named "WPP2022_Demographic_Indicators_Medium.csv". This is the raw data file from the United Nations. There are a lot of numbers here, and some of the variable names are nonsense. What does "LE15" even mean?!
 
 This is where **data documentation** comes in. It is all the meta-data about the data you are looking at. It often explains how the data was made, and what all the data means. Open the file named "WPP2022_Demographic_Indicators_notes.csv" to start looking at some documentation. This file explains what each of the main data columns mean in terms of what is measured, and the units they are measured in. For example, the aforementioned "LE15" stands for "Life Expectancy at Age 15, both sexes," and is measured in years. That means in the data file,  for row 2 and column LE15, for the whole world in 1950, a person at 15 years old had a life expectancy of `47.0395` years.
 
 :::{.callout-note}
-## Question 1
+### Question 1
 
 Using the "WPP2022_Demographic_Indicators_notes.csv" file, what variable corresponds to "median age"?
 
-<REPLACE THIS TEXT WITH YOR ANSWER> 37.4674
+<REPLACE THIS TEXT WITH YOR ANSWER>
 :::
  
 :::{.callout-note}
-## Question 2
+### Question 2
 
 Using the data from "WPP2022_Demographic_Indicators_Medium.csv," what was the median age in the United States in 2020?
 
-<REPLACE THIS TEXT WITH YOR ANSWER> 37.4674
+<REPLACE THIS TEXT WITH YOR ANSWER> 
 
 Using the same data, what was the median age in Japan in 2020?
 
-<REPLACE THIS TEXT WITH YOR ANSWER> 47.9829
+<REPLACE THIS TEXT WITH YOR ANSWER> 
 
 :::
  
-We can also look into the sources of the data compiled by the UN. You can find that in the file called "WPP2022_F02_METADATA.XLSX."
+We can also look into the sources of the data compiled by the UN. You can find that in the file called "WPP2022_F02_METADATA.XLSX." The UN relies on a lot of different sources. This can result in impressive looking results, but may hide some issues.
+
+:::{.callout-note}
+### Question 3
+
+Thinking generally, what problems do you think may arise when combining so many different data sets? What problems can occur?
+
+<REPLACE THIS TEXT WITH YOR ANSWER>
+
+:::
+
+## Loading in the Data
+
+Now that we have an idea of what the data is, let's work on getting it into R. Using a function we learned this week, read the dataframe in the data folder of this project into R.
+
+:::{.callout-tip}
+We saw the function to read in data using a web URL in the problem sets, but it works with files on your computer too! Local files (on your computer) can also benefit from auto-complete. Start typing the name of the file in quotes within the function as an argument, and press the TAB key. You should get some suggestions.
+:::
+
+:::{.callout-note}
+### Question 4
+
+Read in the UN data file, assigning it to an object called `un_pop`.
+:::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
 
 
+## Understanding the Data File
+
+Now that we have our UN Data in R
 
