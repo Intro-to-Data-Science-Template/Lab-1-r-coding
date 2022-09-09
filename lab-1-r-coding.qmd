@@ -72,7 +72,44 @@ Read in the UN data file, assigning it to an object called `un_pop`.
 ```
 
 
-## Understanding the Data File
+## Understanding the Data
 
-Now that we have our UN Data in R
+Now that we have our UN Data in R, let's start to explore it a bit.
 
+:::{.callout-note}
+### Question 5
+
+Use a function to examine the dimensions of the `un_pop` dataframe and get the type for each of the variables.
+:::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
+
+:::{.callout-note}
+### Question 6
+
+Open the `un_pop` dataframe in a viewer window and scroll through it. How are the rows organized? What sort of groupings do you see?
+:::
+
+## Learning from the Data
+
+Now that we have the data loaded into R, let's see what we can learn from this data.
+
+:::{.callout-note}
+### Question 7
+
+Across all recorded years, for the whole world, what is the mean "Life Expectancy at Birth, both sexes"?
+:::
+
+:::{.callout-tip}
+You may have a problem with NAs here, check the help file of your function to see if there are any **arguments** that have to do with NAs.
+:::
+
+:::{.callout-note}
+### Question 8
+
+Across all recorded years, what is the mean "Life Expectancy at Birth, both sexes" for just the United States of America?
+:::
