@@ -1,6 +1,6 @@
 ---
 title: "Lab 1. Fundamental R Coding"
-author: "Jared Joseph & Lindsay Poirier"
+author: "Jared Joseph"
 format: html
 editor: source
 ---
@@ -24,7 +24,7 @@ This is where **data documentation** comes in. It is all the meta-data about the
 
 Using the "WPP2022_Demographic_Indicators_notes.csv" file, what variable corresponds to "median age"?
 
-<REPLACE THIS TEXT WITH YOR ANSWER>
+*REPLACE THIS TEXT WITH YOR ANSWER*
 :::
  
 :::{.callout-note}
@@ -32,11 +32,11 @@ Using the "WPP2022_Demographic_Indicators_notes.csv" file, what variable corresp
 
 Using the data from "WPP2022_Demographic_Indicators_Medium.csv," what was the median age in the United States in 2020?
 
-<REPLACE THIS TEXT WITH YOR ANSWER> 
+*REPLACE THIS TEXT WITH YOR ANSWER*
 
 Using the same data, what was the median age in Japan in 2020?
 
-<REPLACE THIS TEXT WITH YOR ANSWER> 
+*REPLACE THIS TEXT WITH YOR ANSWER*
 
 :::
  
@@ -47,7 +47,7 @@ We can also look into the sources of the data compiled by the UN. You can find t
 
 Thinking generally, what problems do you think may arise when combining so many different data sets? What problems can occur?
 
-<REPLACE THIS TEXT WITH YOR ANSWER>
+*REPLACE THIS TEXT WITH YOR ANSWER*
 
 :::
 
@@ -105,11 +105,100 @@ Across all recorded years, for the whole world, what is the mean "Life Expectanc
 :::
 
 :::{.callout-tip}
-You may have a problem with NAs here, check the help file of your function to see if there are any **arguments** that have to do with NAs.
+You may have a problem with only getting an `NA` here, check the help file of your function to see if there are any **arguments** that have to do with `NA`s.
 :::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
 
 :::{.callout-note}
 ### Question 8
 
 Across all recorded years, what is the mean "Life Expectancy at Birth, both sexes" for just the United States of America?
 :::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
+
+:::{.callout-note}
+### Question 9
+
+Across all recorded years, what is the mean "Life Expectancy at Birth, both sexes" for just Japan?
+:::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
+
+:::{.callout-note}
+### Question 10
+
+Create a new dataframe called `pre_40_mort`, which is a subset of `un_pop` containing the columns for "Location", "Time", "Mortality before Age 40, both sexes", "Male mortality before Age 40", and "Female mortality before Age 40".
+:::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
+
+:::{.callout-note}
+### Question 10
+
+Create a new dataframe called `pre_40_mort`, which is a subset of `un_pop` containing the columns for "Location", "Time", "Mortality before Age 40, both sexes", "Male mortality before Age 40", and "Female mortality before Age 40".
+:::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
+
+:::{.callout-note}
+### Question 11
+
+Create a new column called `mort_diff` in our `pre_40_mort` dataframe which finds the difference between "Male mortality before Age 40" and "Female mortality before Age 40".
+:::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
+
+:::{.callout-note}
+### Question 12
+
+Interpret the results in our new `mort_diff` column. What do those numbers mean?
+
+*REPLACE THIS TEXT WITH YOR ANSWER*
+:::
+
+:::{.callout-warning}
+### CHALLANGE QUESTION
+
+Calculate the difference between the mean "Net Number of Migrants" for the United States of America and Canada for the years 2000-2010.
+:::
+
+```{r}
+
+#<REPLACE THIS COMMENT WITH YOR ANSWER>
+
+```
+
+:::{.callout-tip}
+It is not required, but your code will be a bit easier if you understand [Logical Operators](https://towardsdatascience.com/the-complete-guide-to-logical-operators-in-r-9eacb5fd9abd), specifically the `&` sign.
+:::
+
+
+
+
+
