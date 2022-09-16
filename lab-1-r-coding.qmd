@@ -7,6 +7,9 @@ editor: source
 
 ## Introduction
 
+Click here to access the lab on Github Classroom:
+[Github Classroom Assignment for Lab 1: R Coding](https://classroom.github.com/a/zwOsnirp)
+
 This lab will provide an opportunity to practice fundamental R coding skills with real-world data. We will be looking at data from the United Nations (UN) [World Population Prospects 2022](https://population.un.org/wpp/)[^1], which for 27 years has been providing population estimates for countries around the world. This year their estimates span 237 countries, with historical data from 1950-2022, and projections out to 2100. Such population estimates play a crucial function in many long-term planning activities. This includes projects such as predicting and preparing for climate crises, anticipating global health needs, and even projecting targets for business expansion. 
 
 [^1]: United Nations, Department of Economic and Social Affairs, Population Division (2022). World Population Prospects 2022, Online Edition. 
